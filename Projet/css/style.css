@@ -1,0 +1,290 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #747474;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 34px;
+  color: #00b39b;
+  font-weight: 100;
+}
+
+/*********************************** CSS Navmenu *****************/
+
+.doc-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.logo-doc {
+  width: 268px;
+  height: 33px;
+}
+
+.doc-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doc-menu li {
+  padding: 0 5px;
+}
+
+.doc-menu .active-link a {
+  color: #00b39b;
+}
+.doc-menu li a {
+  color: #ababab;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.doc-menu li a:hover {
+  color: #00b39b;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  width: 250px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+
+.dropdown-menu li {
+  padding: 10px 0;
+}
+
+.dropdown-link {
+  position: relative;
+}
+
+.dropdown-link:hover .dropdown-menu {
+  display: flex;
+}
+
+/*********************************** CSS Intro section *****************/
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 250px;
+}
+
+.intro-section img {
+  width: 40px;
+  height: 39px;
+}
+
+.intro-section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-section p {
+  padding: 10px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+/*************************************** CSS Services section ***************/
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 250px;
+}
+
+.for-patients {
+  background: #00b39b;
+  color: #fff;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.for-doctors {
+  background: #3d83df;
+  color: #fff;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section span {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.services-section h2 {
+  font-size: 1.625em;
+  color: #fff;
+  margin-top: 0.3em;
+  font-weight: 100;
+}
+
+.services-section select {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.services-section img {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  bottom: 0;
+  left: 200px;
+}
+/*************************************** CSS Brands section ***************/
+.brands-section {
+  margin: 50px 250px;
+  display: flex;
+}
+.brands-section h1 {
+  width: 33%;
+  font-size: 1.625em;
+  margin: 0.25em 0 0.35em;
+  padding-right: 1em;
+}
+.brands-section ul {
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.brands-section li a {
+  fill: #ababab;
+}
+
+.brands-section li a:hover {
+  fill: #00b39b;
+}
+svg {
+  height: 20px;
+  width: auto;
+}
+/*************************************** CSS Stats section ***************/
+.stats-section {
+  background: #e5faf8;
+}
+.section-inner {
+  margin: 50px 250px;
+  display: flex;
+}
+.stats-disc {
+  margin-top: 2em;
+  flex: 1;
+}
+.stats-disc p {
+  font-size: 0.875em;
+  line-height: 1.7142857143;
+}
+.stats-items {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.stats-item {
+  background: #fff;
+  border-radius: 5px;
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  padding: 15px;
+  margin: 5px;
+  font-size: 0.8125em;
+}
+#stat-countries,
+#stat-patient {
+  margin-top: 25px;
+}
+.stats-item h3 {
+  font-size: 1.8461538462em;
+  color: #00b39b;
+  margin: 0.5em 0;
+  font-weight: 100;
+}
+/*************************************** CSS Offices section ***************/
+.offices-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 250px;
+}
+.offices-section p {
+  line-height: 1.7142857143;
+  font-size: 0.875em;
+  text-align: center;
+}
+.offices-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.office {
+  padding: 10px;
+}
+.office img {
+  width: 250px;
+}
+.office_disc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6666666667;
+  padding: 1.1111111111em;
+}
+.btn {
+  border-radius: 4px;
+  color: #fff;
+  background: #3d83df;
+  font-size: 0.625rem;
+  padding: 1em 1.5em;
+}
+/*************************************** CSS Footer section ***************/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 250px;
+}
+footer p {
+  font-size: 0.75em;
+  color: #ababab;
+  text-align: center;
+}
